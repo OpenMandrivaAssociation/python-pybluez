@@ -11,6 +11,7 @@ Source0: http://org.csail.mit.edu/pybluez/release/%{oname}-src-%{version}.tar.bz
 License: GPL
 Group: Development/Python
 Url: http://org.csail.mit.edu/pybluez/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: bluez-devel python-devel
 
 %description
