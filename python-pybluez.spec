@@ -1,7 +1,7 @@
 %define oname pybluez
 %define name python-%{oname}
 %define version 0.9.2
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: Python wrappers around system Bluetooth resources
 Name: %{name}
