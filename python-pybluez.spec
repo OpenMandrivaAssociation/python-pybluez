@@ -1,13 +1,13 @@
-%define oname pybluez
+%define oname PyBluez
 %define name python-%{oname}
-%define version 0.9.2
-%define release %mkrel 6
+%define version 0.18
+%define release %mkrel 1
 
 Summary: Python wrappers around system Bluetooth resources
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://org.csail.mit.edu/pybluez/release/%{oname}-src-%{version}.tar.bz2
+Source0: http://pybluez.googlecode.com/files/%{oname}-%{version}.tar.gz
 License: GPL
 Group: Development/Python
 Url: http://org.csail.mit.edu/pybluez/
@@ -35,8 +35,8 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc CHANGELOG README
-%{py_platsitedir}/_bluetooth.so
-%{py_platsitedir}/bluetooth.py*
 %{py_platsitedir}/*.egg-info
-
+%{py_platsitedir}/bluetooth/
+%{py_platsitedir}/bluetooth/_bluetooth.so
+%{py_platsitedir}/bluetooth/*.py*
 
