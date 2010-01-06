@@ -1,5 +1,5 @@
 %define oname PyBluez
-%define name python-%{oname}
+%define name python-pybluez
 %define version 0.18
 %define release %mkrel 1
 
