@@ -3,7 +3,7 @@
 Summary: Python wrappers around system Bluetooth resources
 Name:    python-pybluez
 Version: 0.18
-Release: 4
+Release: 5
 Source0: http://pybluez.googlecode.com/files/%{oname}-%{version}.tar.gz
 License: GPL
 Group: Development/Python
