@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 %define oname PyBluez
 
 Summary: Python wrappers around system Bluetooth resources
