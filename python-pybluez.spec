@@ -10,6 +10,7 @@ Group: Development/Python
 Url: https://github.com/pybluez/pybluez
 BuildRequires: pkgconfig(bluez)
 BuildRequires: pkgconfig(python)
+BuildRequires: python3dist(setuptools)
 
 %description
 PyBluez is an effort to create python wrappers around system Bluetooth
