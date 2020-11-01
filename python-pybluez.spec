@@ -27,7 +27,7 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 %files
-%doc CHANGELOG README
+%doc CHANGELOG README.md
 %{py_platsitedir}/*.egg-info
 %{py_platsitedir}/bluetooth/
 #%{py_platsitedir}/bluetooth/_bluetooth.so
