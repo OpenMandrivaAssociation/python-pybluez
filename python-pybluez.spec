@@ -2,14 +2,14 @@
 
 Summary: Python wrappers around system Bluetooth resources
 Name:    python-pybluez
-Version: 0.18
-Release: 5
-Source0: http://pybluez.googlecode.com/files/%{oname}-%{version}.tar.gz
+Version: 0.23
+Release: 1
+Source0: https://files.pythonhosted.org/packages/08/9f/e9d93b266d2d1ea988780a52a696073ba0a65df65a532165fdf6ff90d0ed/%{oname}-%{version}.tar.gz
 License: GPL
 Group: Development/Python
-Url: http://org.csail.mit.edu/pybluez/
+Url: https://github.com/pybluez/pybluez
 BuildRequires: pkgconfig(bluez)
-BuildRequires: python-devel
+BuildRequires: pkgconfig(python)
 
 %description
 PyBluez is an effort to create python wrappers around system Bluetooth
