@@ -4,7 +4,7 @@
 Summary: Python wrappers around system Bluetooth resources
 Name:    python-pybluez
 Version: 0.23
-Release: 1
+Release: 2
 Source0: https://files.pythonhosted.org/packages/08/9f/e9d93b266d2d1ea988780a52a696073ba0a65df65a532165fdf6ff90d0ed/%{oname}-%{version}.tar.gz
 License: GPL
 Group: Development/Python
@@ -29,7 +29,6 @@ python setup.py install --root=%{buildroot}
 
 %files
 %doc CHANGELOG README.md
-%{py_platsitedir}/*.egg-info
-%{py_platsitedir}/bluetooth/
-#%{py_platsitedir}/bluetooth/_bluetooth.so
-#%{py_platsitedir}/bluetooth/*.py*
+%{python_sitearch}/PyBluez-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitearch}/PyBluez-%{version}-py*.*.egg-info
+%{python_sitearch}/bluetooth/*
