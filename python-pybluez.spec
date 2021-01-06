@@ -29,7 +29,6 @@ python setup.py install --root=%{buildroot}
 
 %files
 %doc CHANGELOG README.md
-#{py_platsitedir}/*.egg-info
-#{py_platsitedir}/bluetooth/
-#%{py_platsitedir}/bluetooth/_bluetooth.so
-#%{py_platsitedir}/bluetooth/*.py*
+%{python_sitearch}/PyBluez-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitearch}/PyBluez-%{version}-py*.*.egg-info
+%{python_sitearch}/bluetooth/*
